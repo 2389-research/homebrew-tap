@@ -5,20 +5,20 @@
 class GsuiteMcp < Formula
   desc "GSuite MCP Server - Model Context Protocol server for Google Workspace APIs"
   homepage "https://github.com/2389-research/gsuite-mcp"
-  version "1.0.2"
+  version "1.0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/2389-research/gsuite-mcp/releases/download/v1.0.2/gsuite-mcp_1.0.2_darwin_amd64.tar.gz"
-      sha256 "c87cbaea480c5dc24321f6b3fd9b361b4df6449540c52edbb3122c220c4c551c"
+      url "https://github.com/2389-research/gsuite-mcp/releases/download/v1.0.3/gsuite-mcp_1.0.3_darwin_amd64.tar.gz"
+      sha256 "3e04e0d5f2ba89d2795fd88e264b191307c8ca9a766688aba68ee831fcfbb549"
 
       def install
         bin.install "gsuite-mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/2389-research/gsuite-mcp/releases/download/v1.0.2/gsuite-mcp_1.0.2_darwin_arm64.tar.gz"
-      sha256 "1d2c0c390897c0ec8d42bf9b3a2828a473d55b7cf7fa83845ccb94076d79ffd7"
+      url "https://github.com/2389-research/gsuite-mcp/releases/download/v1.0.3/gsuite-mcp_1.0.3_darwin_arm64.tar.gz"
+      sha256 "b68fab56604266cd51570c2c30a039f8d99abc05be79777109ea0423fd11bd51"
 
       def install
         bin.install "gsuite-mcp"
@@ -28,15 +28,15 @@ class GsuiteMcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/2389-research/gsuite-mcp/releases/download/v1.0.2/gsuite-mcp_1.0.2_linux_amd64.tar.gz"
-      sha256 "58b475f0a804e13e8f194bd8819b3988d68d9d1c400e3d9ac837a583757ad597"
+      url "https://github.com/2389-research/gsuite-mcp/releases/download/v1.0.3/gsuite-mcp_1.0.3_linux_amd64.tar.gz"
+      sha256 "aacb2ef0ad9dba9a6a5f04fd866466bf5877514a3b76a3bf713c6223ad8afb5e"
       def install
         bin.install "gsuite-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/2389-research/gsuite-mcp/releases/download/v1.0.2/gsuite-mcp_1.0.2_linux_arm64.tar.gz"
-      sha256 "701763263e744600f7d16312a7af84a0d311afd95c72ba67e90209f44ab54b55"
+      url "https://github.com/2389-research/gsuite-mcp/releases/download/v1.0.3/gsuite-mcp_1.0.3_linux_arm64.tar.gz"
+      sha256 "b89c78c27a9a68ec2a4273eea53840275ffbe5349e120d698fb193db1231553d"
       def install
         bin.install "gsuite-mcp"
       end
