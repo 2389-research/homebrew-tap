@@ -5,20 +5,20 @@
 class Ish < Formula
   desc "ISH - Intelligent Server Hub for digital twin APIs"
   homepage "https://github.com/2389-research/ish"
-  version "0.3.0"
+  version "0.4.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/2389-research/ish/releases/download/v0.3.0/ish_0.3.0_darwin_amd64.tar.gz"
-      sha256 "be88f914b7bfb2ee004307bdb886a666e1b1b28bf5760a963508a1c880f4ae73"
+      url "https://github.com/2389-research/ish/releases/download/v0.4.0/ish_0.4.0_darwin_amd64.tar.gz"
+      sha256 "82d350ef198c4303b81199392f13fda6c936c7dd48c34ba0a0b6c967b36c488b"
 
       def install
         bin.install "ish"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/2389-research/ish/releases/download/v0.3.0/ish_0.3.0_darwin_arm64.tar.gz"
-      sha256 "bf7281774c3ae64ce2158621cee2718a270b9032aef4ba733fee2f1221f43800"
+      url "https://github.com/2389-research/ish/releases/download/v0.4.0/ish_0.4.0_darwin_arm64.tar.gz"
+      sha256 "3d077d59e2c051307edab40aef04d8824ec052c6dafaa86b04450a1dde78ef52"
 
       def install
         bin.install "ish"
@@ -28,15 +28,15 @@ class Ish < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/2389-research/ish/releases/download/v0.3.0/ish_0.3.0_linux_amd64.tar.gz"
-      sha256 "49239e31ff6292f7a03fa055faf876cb6c53ac627026f255c4ff99f48ee4b267"
+      url "https://github.com/2389-research/ish/releases/download/v0.4.0/ish_0.4.0_linux_amd64.tar.gz"
+      sha256 "9f4e902918ae345d66e10f261619e2725b682ca2d5a1672dcbf5da1e1142c2d9"
       def install
         bin.install "ish"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/2389-research/ish/releases/download/v0.3.0/ish_0.3.0_linux_arm64.tar.gz"
-      sha256 "4f10b6819bfe54a1131a637c0b866dbb421d2a896fa45810c36be472da5675cb"
+      url "https://github.com/2389-research/ish/releases/download/v0.4.0/ish_0.4.0_linux_arm64.tar.gz"
+      sha256 "717ab0c2bc5d20a165898ddb40578c0a4d516f1d40c89d3a1159d3f1cb2b0fd1"
       def install
         bin.install "ish"
       end
