@@ -1,17 +1,17 @@
 class Charm < Formula
   desc "2389 Charm - Backend tools for terminal applications"
   homepage "https://github.com/2389-research/charm"
-  version "0.15.4"
+  version "0.15.5"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/2389-research/charm/releases/download/v0.15.4/charm_0.15.4_Darwin_x86_64.tar.gz"
-      sha256 "ac7dc154d84df454160c107b69258e2f589a003c5bda56798583400c1766f0ff"
+      url "https://github.com/2389-research/charm/releases/download/v0.15.5/charm_0.15.5_Darwin_x86_64.tar.gz"
+      sha256 "5b9403443472ac67aeead9689bd859cbcaa3c49c4c37264933bbd9631b261708"
     end
     on_arm do
-      url "https://github.com/2389-research/charm/releases/download/v0.15.4/charm_0.15.4_Darwin_arm64.tar.gz"
-      sha256 "9d4ddab0ad122a0dacc8b6660ed1d3be955c01b0bc034a26f723b0a397a2bf57"
+      url "https://github.com/2389-research/charm/releases/download/v0.15.5/charm_0.15.5_Darwin_arm64.tar.gz"
+      sha256 "f633c800217b39b895ab6f276752d496c168ace5ec4a9af24d8f003322fba049"
     end
   end
 
