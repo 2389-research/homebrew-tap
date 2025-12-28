@@ -10,7 +10,7 @@ class Hex < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/2389-research/hex/releases/download/v1.7.0/hex_1.7.0_Darwin_x86_64.tar.gz"
-      sha256 "79af661808b24240b5b9767e106547d3339562c2a34c693e38452fe8d758a75b"
+      sha256 "801ec61bb2ef99c2f560e69cfc7805e9c373e50920d6bb8db7584949902d9ce8"
 
       def install
         bin.install "hex"
@@ -18,7 +18,7 @@ class Hex < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/2389-research/hex/releases/download/v1.7.0/hex_1.7.0_Darwin_arm64.tar.gz"
-      sha256 "f462c8919c036988a8a002de1839bfd923a4cf54d7fa92d2664643a9a18bf15c"
+      sha256 "a0cc320759bc8de16e187a07e78778e3218f330d1e81665ade9773a4e08d3cdd"
 
       def install
         bin.install "hex"
@@ -29,14 +29,14 @@ class Hex < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/2389-research/hex/releases/download/v1.7.0/hex_1.7.0_Linux_x86_64.tar.gz"
-      sha256 "e31e427e50cfbd7eca200b087d0b9abe92ec6a53468f444b92fc0e27268a572f"
+      sha256 "fe9f943103ad01a4628409965bfe56ad04e4f5d0c94042301b58a75beba2a5e0"
       def install
         bin.install "hex"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/2389-research/hex/releases/download/v1.7.0/hex_1.7.0_Linux_arm64.tar.gz"
-      sha256 "747d9605ee626caf309fbd70acc96939e576f7e660d814b6154abef22f3392a4"
+      sha256 "eb5d158c68c1d49f89688ac3f7027bc630bf1c99980c6e1e131c04d2a6d316af"
       def install
         bin.install "hex"
       end
