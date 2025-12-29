@@ -5,20 +5,20 @@
 class Hex < Formula
   desc "Powerful CLI for Claude AI, inspired by Claude Code, Crush, Codex, and MaKeR"
   homepage "https://github.com/2389-research/hex"
-  version "1.7.0"
+  version "1.8.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/2389-research/hex/releases/download/v1.7.0/hex_1.7.0_Darwin_x86_64.tar.gz"
-      sha256 "801ec61bb2ef99c2f560e69cfc7805e9c373e50920d6bb8db7584949902d9ce8"
+      url "https://github.com/2389-research/hex/releases/download/v1.8.0/hex_1.8.0_Darwin_x86_64.tar.gz"
+      sha256 "1bb0f31add4f60a664c11380728ebf4b6331f6e959f585248b9fa1ed8ddf07b5"
 
       def install
         bin.install "hex"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/2389-research/hex/releases/download/v1.7.0/hex_1.7.0_Darwin_arm64.tar.gz"
-      sha256 "a0cc320759bc8de16e187a07e78778e3218f330d1e81665ade9773a4e08d3cdd"
+      url "https://github.com/2389-research/hex/releases/download/v1.8.0/hex_1.8.0_Darwin_arm64.tar.gz"
+      sha256 "acd6e301f9ab78200b62e946e2bbd7dd7ddb28731b8bfdfcfd0e806a710bbac2"
 
       def install
         bin.install "hex"
@@ -28,15 +28,15 @@ class Hex < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/2389-research/hex/releases/download/v1.7.0/hex_1.7.0_Linux_x86_64.tar.gz"
-      sha256 "fe9f943103ad01a4628409965bfe56ad04e4f5d0c94042301b58a75beba2a5e0"
+      url "https://github.com/2389-research/hex/releases/download/v1.8.0/hex_1.8.0_Linux_x86_64.tar.gz"
+      sha256 "789ff7f68ad3c75e0484896e23c7c2ba216e1107c7f4b9dbf44105f0b725ebce"
       def install
         bin.install "hex"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/2389-research/hex/releases/download/v1.7.0/hex_1.7.0_Linux_arm64.tar.gz"
-      sha256 "eb5d158c68c1d49f89688ac3f7027bc630bf1c99980c6e1e131c04d2a6d316af"
+      url "https://github.com/2389-research/hex/releases/download/v1.8.0/hex_1.8.0_Linux_arm64.tar.gz"
+      sha256 "9e0e0806c9ad9bf41bf48871b683cd010621672c0e9f7c04e2665796082e22c2"
       def install
         bin.install "hex"
       end
