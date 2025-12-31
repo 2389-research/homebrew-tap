@@ -9,7 +9,7 @@ class Hex < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/2389-research/hex/releases/download/v1.9.3/hex_1.9.3_Darwin_x86_64.tar.gz"
+      url "https://firebasestorage.googleapis.com/v0/b/hex-code-daf69.firebasestorage.app/o/releases%2Fv1.9.3%2Fhex_1.9.3_Darwin_x86_64.tar.gz?alt=media"
       sha256 "801d6e03d5a72ba600c09ec2e40ddb72d5239737a917e97f2fa6b5ea111ccb38"
 
       def install
@@ -17,7 +17,7 @@ class Hex < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/2389-research/hex/releases/download/v1.9.3/hex_1.9.3_Darwin_arm64.tar.gz"
+      url "https://firebasestorage.googleapis.com/v0/b/hex-code-daf69.firebasestorage.app/o/releases%2Fv1.9.3%2Fhex_1.9.3_Darwin_arm64.tar.gz?alt=media"
       sha256 "379fbce6eab90e47168e352b82e7f1c8485b560aa40eb8146c29df8ef2d404b5"
 
       def install
@@ -28,14 +28,14 @@ class Hex < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/2389-research/hex/releases/download/v1.9.3/hex_1.9.3_Linux_x86_64.tar.gz"
+      url "https://firebasestorage.googleapis.com/v0/b/hex-code-daf69.firebasestorage.app/o/releases%2Fv1.9.3%2Fhex_1.9.3_Linux_x86_64.tar.gz?alt=media"
       sha256 "788d23192dd2b86a424be261c024c6ab11cdbd2753b56db318419d443864bc94"
       def install
         bin.install "hex"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/2389-research/hex/releases/download/v1.9.3/hex_1.9.3_Linux_arm64.tar.gz"
+      url "https://firebasestorage.googleapis.com/v0/b/hex-code-daf69.firebasestorage.app/o/releases%2Fv1.9.3%2Fhex_1.9.3_Linux_arm64.tar.gz?alt=media"
       sha256 "b2640236748723beb928fa51b424b324dff12464649e0097f1a21efa248adf1f"
       def install
         bin.install "hex"
