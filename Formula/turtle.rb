@@ -10,7 +10,7 @@ class Turtle < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/2389-research/turtle/releases/download/v0.1.0/turtle_0.1.0_Darwin_x86_64.tar.gz"
-      sha256 "cc2792c015f0506781a1c2ac985216e42c070b67f8e72c118b8e1fc2729ca3b9"
+      sha256 "c135a963896d047fbc8499e3950a51e46d593e7983491c27b045d6392516c9aa"
 
       def install
         bin.install "turtle"
@@ -18,7 +18,7 @@ class Turtle < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/2389-research/turtle/releases/download/v0.1.0/turtle_0.1.0_Darwin_arm64.tar.gz"
-      sha256 "e0d47c1b24a47a0d74f370036b74988477d9e7e1cccf6c5789bc1ec6ee74facc"
+      sha256 "58bb6e6d21663a6eac4d2b795cf0c99c9c31e402d2f2b5cba5b20046742856ab"
 
       def install
         bin.install "turtle"
@@ -29,14 +29,14 @@ class Turtle < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/2389-research/turtle/releases/download/v0.1.0/turtle_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "4ec55189887258d0f2aa425a5fc9a4abeea73c58ba67cb23b153a7feb3c0ca83"
+      sha256 "0334d44331b28892c940b024cd758df7c53f42a57f1c59eca7da60dcfbfdfb43"
       def install
         bin.install "turtle"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/2389-research/turtle/releases/download/v0.1.0/turtle_0.1.0_Linux_arm64.tar.gz"
-      sha256 "0a62309603974377a427943559f7103708b3867df3b0cb6ed0e76547140a566e"
+      sha256 "289015d7b2899f1414faee50a5ef061304c9576d9db82d6e30f53a6f926842e6"
       def install
         bin.install "turtle"
       end
