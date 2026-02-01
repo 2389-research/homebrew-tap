@@ -7,18 +7,18 @@ class Agentjj < Formula
   on_macos do
     on_intel do
       url "https://github.com/2389-research/agentjj/releases/download/v0.1.0/agentjj-x86_64-apple-darwin.tar.gz"
-      sha256 "9698bd25981b84375236682ec76315de64f4f1cdb4ed76b9c0f9eae1de22d47d"
+      sha256 "ab6756f2ab7e353ab46afe3bc425bd8381c1277d1706d7f8978d95eee65424cb"
     end
     on_arm do
       url "https://github.com/2389-research/agentjj/releases/download/v0.1.0/agentjj-aarch64-apple-darwin.tar.gz"
-      sha256 "b67d88761a31e1a0b522acc8606b5d220a2920700a2ad94450571d259a4ff8ee"
+      sha256 "06541ee4ea6cd08a107893234a4b3606be3d369331072ff0b43e08163ec520de"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/2389-research/agentjj/releases/download/v0.1.0/agentjj-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "2e70ee965b90f3725bb00e62f2d151a38eb3ee962e49abb71ebc1df57037ec7d"
+      sha256 "45f6dc8d1f60b1f859d29cb1d4688c1c26ed00e3e6daa561db824726bb61f71e"
     end
   end
 
