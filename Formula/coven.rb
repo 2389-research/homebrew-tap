@@ -4,24 +4,24 @@
 class Coven < Formula
   desc "Agent platform CLI for coven"
   homepage "https://github.com/2389-research/coven"
-  version "0.5.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/2389-research/coven/releases/download/v0.5.0/coven-v0.5.0-x86_64-apple-darwin.tar.gz"
-      sha256 "30c50a0f6edfd1d0602043526d71ea45f8f8a884e8068b5df1106252243273d9"
+      url "https://github.com/2389-research/coven/releases/download/v0.4.1/coven-v0.4.1-x86_64-apple-darwin.tar.gz"
+      sha256 "fd6ae67fbbe81362d5faa7cc585caad026e20de88c1e99dab9bcec3e2de178e7"
     end
     on_arm do
-      url "https://github.com/2389-research/coven/releases/download/v0.5.0/coven-v0.5.0-aarch64-apple-darwin.tar.gz"
-      sha256 "539a1a220d550751a11ee707b797bce5b717f87963ea60fc07bb846d1331b1de"
+      url "https://github.com/2389-research/coven/releases/download/v0.4.1/coven-v0.4.1-aarch64-apple-darwin.tar.gz"
+      sha256 "318b9fa8ca295f144f577340734facc734dd74bb1254cb915f4b99d844f8d403"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/2389-research/coven/releases/download/v0.5.0/coven-v0.5.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "7fbd32d44c1fd0409e7b6263b34e2c86e5b6e25b2ec117e10f79324c8c572944"
+      url "https://github.com/2389-research/coven/releases/download/v0.4.1/coven-v0.4.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "0439e3acbf84c98fbaea21efb8c395a62a14ddb7cd92fbb5d7c1ebafb5bd328e"
     end
     # TODO: ARM Linux not available yet (OpenSSL cross-compile issues).
     on_arm do
