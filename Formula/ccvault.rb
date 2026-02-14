@@ -5,21 +5,21 @@
 class Ccvault < Formula
   desc "Claude Code conversation archive and analysis tool"
   homepage "https://github.com/2389-research/ccvault"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/2389-research/ccvault/releases/download/v0.1.3/ccvault_0.1.3_Darwin_x86_64.tar.gz"
-    sha256 "e699fe0655ff4c078af71040d279fbbb389bfe95f109ce0058c2781e44cd20fa"
+    url "https://github.com/2389-research/ccvault/releases/download/v0.1.4/ccvault_0.1.4_Darwin_x86_64.tar.gz"
+    sha256 "2c1a448e9e0e281ff2699061a44c04657ca249be563792a78e61e15be6242be7"
 
     def install
       bin.install "ccvault"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/2389-research/ccvault/releases/download/v0.1.3/ccvault_0.1.3_Darwin_arm64.tar.gz"
-    sha256 "a8771d62dd8038b0fb7da73a0e8d813ebb3a5eff18f887b0837e2ac3e0fdb27b"
+    url "https://github.com/2389-research/ccvault/releases/download/v0.1.4/ccvault_0.1.4_Darwin_arm64.tar.gz"
+    sha256 "2a0f2ae27890c032dd4b72d50f2e38c8b85d56d23e7cfba4b319407d772c251a"
 
     def install
       bin.install "ccvault"
