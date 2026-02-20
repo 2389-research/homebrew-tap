@@ -5,21 +5,21 @@
 class Mammoth < Formula
   desc "A DOT-based pipeline runner with LLM agents"
   homepage "https://github.com/2389-research/mammoth"
-  version "0.7.1"
+  version "0.7.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/2389-research/mammoth/releases/download/v0.7.1/mammoth_0.7.1_Darwin_x86_64.tar.gz"
-      sha256 "dd270525bc58fe638ddd7e90c045d0e5be535a499d5d0b4c4fff80214cc706b5"
+      url "https://github.com/2389-research/mammoth/releases/download/v0.7.2/mammoth_0.7.2_Darwin_x86_64.tar.gz"
+      sha256 "60eb7314438cacd96227898d3d0be4a9558afa897584c3b8e282c2c27994c2be"
 
       def install
         bin.install "mammoth"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/2389-research/mammoth/releases/download/v0.7.1/mammoth_0.7.1_Darwin_arm64.tar.gz"
-      sha256 "1a3c1974a8f71669962e6db6a2a3a0f09be66252c62be326825829e2f5bce33a"
+      url "https://github.com/2389-research/mammoth/releases/download/v0.7.2/mammoth_0.7.2_Darwin_arm64.tar.gz"
+      sha256 "0b08a75c7724f016b9ddfbdae040bad374985c663a5b83fb02f03f0a721a499c"
 
       def install
         bin.install "mammoth"
@@ -29,15 +29,15 @@ class Mammoth < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/2389-research/mammoth/releases/download/v0.7.1/mammoth_0.7.1_Linux_x86_64.tar.gz"
-      sha256 "5ba7031a76b27fa2dba7b9401dbb2a5789fc2d81eb4f571d03d4433da7082523"
+      url "https://github.com/2389-research/mammoth/releases/download/v0.7.2/mammoth_0.7.2_Linux_x86_64.tar.gz"
+      sha256 "a3cb1fb9514d116d7fb819e7d07ececc82033fa8319f2bfe15282a418bdaeb8b"
       def install
         bin.install "mammoth"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/2389-research/mammoth/releases/download/v0.7.1/mammoth_0.7.1_Linux_arm64.tar.gz"
-      sha256 "c643ef32b025f8519563a8e759db211431fbcecef75084023db5605f0e502153"
+      url "https://github.com/2389-research/mammoth/releases/download/v0.7.2/mammoth_0.7.2_Linux_arm64.tar.gz"
+      sha256 "70f25424e42c2735be2564b87973251ba7cfcfc5c51bd20919028bff88f01078"
       def install
         bin.install "mammoth"
       end
