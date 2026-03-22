@@ -5,22 +5,22 @@
 class Hex < Formula
   desc "Powerful CLI for Claude AI, inspired by Claude Code, Crush, Codex, and MaKeR"
   homepage "https://github.com/2389-research/hex"
-  version "1.9.3"
+  version "1.6.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://firebasestorage.googleapis.com/v0/b/hex-code-daf69.firebasestorage.app/o/releases%2Fv1.9.3%2Fhex_1.9.3_Darwin_x86_64.tar.gz?alt=media"
-      sha256 "801d6e03d5a72ba600c09ec2e40ddb72d5239737a917e97f2fa6b5ea111ccb38"
+      url "https://github.com/2389-research/hex/releases/download/v1.6.0/hex_1.6.0_Darwin_x86_64.tar.gz"
+      sha256 "8bfbfc7b9fcb0a9554bb67f1468597320b07893876d3a6d4299472d7dccb65c4"
 
-      def install
+      define_method(:install) do
         bin.install "hex"
       end
     end
     if Hardware::CPU.arm?
-      url "https://firebasestorage.googleapis.com/v0/b/hex-code-daf69.firebasestorage.app/o/releases%2Fv1.9.3%2Fhex_1.9.3_Darwin_arm64.tar.gz?alt=media"
-      sha256 "379fbce6eab90e47168e352b82e7f1c8485b560aa40eb8146c29df8ef2d404b5"
+      url "https://github.com/2389-research/hex/releases/download/v1.6.0/hex_1.6.0_Darwin_arm64.tar.gz"
+      sha256 "49a6d5df354e964893d4a976aced3c79a5082dacfacc705135b6a53be97af74b"
 
-      def install
+      define_method(:install) do
         bin.install "hex"
       end
     end
@@ -28,16 +28,16 @@ class Hex < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://firebasestorage.googleapis.com/v0/b/hex-code-daf69.firebasestorage.app/o/releases%2Fv1.9.3%2Fhex_1.9.3_Linux_x86_64.tar.gz?alt=media"
-      sha256 "788d23192dd2b86a424be261c024c6ab11cdbd2753b56db318419d443864bc94"
-      def install
+      url "https://github.com/2389-research/hex/releases/download/v1.6.0/hex_1.6.0_Linux_x86_64.tar.gz"
+      sha256 "117f4b500e126d5565b1c0bff6a9de88274f22f61c9490eead3f67088bc2dba9"
+      define_method(:install) do
         bin.install "hex"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://firebasestorage.googleapis.com/v0/b/hex-code-daf69.firebasestorage.app/o/releases%2Fv1.9.3%2Fhex_1.9.3_Linux_arm64.tar.gz?alt=media"
-      sha256 "b2640236748723beb928fa51b424b324dff12464649e0097f1a21efa248adf1f"
-      def install
+      url "https://github.com/2389-research/hex/releases/download/v1.6.0/hex_1.6.0_Linux_arm64.tar.gz"
+      sha256 "f16c2f4fc6b00e17ceb45353957d879367b21eabaab27b7752ad7ff0214dab71"
+      define_method(:install) do
         bin.install "hex"
       end
     end
