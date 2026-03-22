@@ -5,20 +5,20 @@
 class Hex < Formula
   desc "Powerful CLI for Claude AI, inspired by Claude Code, Crush, Codex, and MaKeR"
   homepage "https://github.com/2389-research/hex"
-  version "1.11.0"
+  version "1.11.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/2389-research/hex/releases/download/v1.11.0/hex_1.11.0_Darwin_x86_64.tar.gz"
-      sha256 "d7f72f0b6ef1e2333a213cbcc96623a180b29a0af5a2d1425fe177386b74ac0f"
+      url "https://github.com/2389-research/hex/releases/download/v1.11.1/hex_1.11.1_Darwin_x86_64.tar.gz"
+      sha256 "98c7efb3e71f7c88e5967dc09e968b7346e05c96a16ec4b8bc8804fc94953e33"
 
       define_method(:install) do
         bin.install "hex"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/2389-research/hex/releases/download/v1.11.0/hex_1.11.0_Darwin_arm64.tar.gz"
-      sha256 "09eadd0cf9b48ef35b8084f8b5c4c48eaffc58ae08762a5dafe2c5632c2525f3"
+      url "https://github.com/2389-research/hex/releases/download/v1.11.1/hex_1.11.1_Darwin_arm64.tar.gz"
+      sha256 "3c44a80f5b1d038e3df0088bcb5ef92b3149640ecb0f9d8ca725fb62451453a8"
 
       define_method(:install) do
         bin.install "hex"
@@ -28,15 +28,15 @@ class Hex < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/2389-research/hex/releases/download/v1.11.0/hex_1.11.0_Linux_x86_64.tar.gz"
-      sha256 "98e8e88d6f4e147f5acd4aa04c942835815e9176e1bde06d6fc5fc207e8300ba"
+      url "https://github.com/2389-research/hex/releases/download/v1.11.1/hex_1.11.1_Linux_x86_64.tar.gz"
+      sha256 "0eb7fc9467ae4c476f2adc02f327daceea3f6df89f8164d466dfcbb886f8e87f"
       define_method(:install) do
         bin.install "hex"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/2389-research/hex/releases/download/v1.11.0/hex_1.11.0_Linux_arm64.tar.gz"
-      sha256 "f56de8e7023cc1d9d5a8f965e2cdd0ce22aa3dac1606b115ac898f12a4047b8a"
+      url "https://github.com/2389-research/hex/releases/download/v1.11.1/hex_1.11.1_Linux_arm64.tar.gz"
+      sha256 "47797d0124c1985f0afd21a8ed66063f7af847c3c0d5364a644ac8bfe37f0e49"
       define_method(:install) do
         bin.install "hex"
       end
