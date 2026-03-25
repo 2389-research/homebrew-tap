@@ -5,21 +5,21 @@
 class DippinLang < Formula
   desc "A pipeline-aware workflow definition language"
   homepage "https://github.com/2389-research/dippin-lang"
-  version "0.4.1"
+  version "0.4.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/2389-research/dippin-lang/releases/download/v0.4.1/dippin-lang_0.4.1_Darwin_x86_64.tar.gz"
-      sha256 "adc0dd8199e13028f8b83e330b0608be0624d20964cda5b6a3b2fbc105c0a86e"
+      url "https://github.com/2389-research/dippin-lang/releases/download/v0.4.2/dippin-lang_0.4.2_Darwin_x86_64.tar.gz"
+      sha256 "0439f4cd2c686d46faa1e4ed1017f9de9feaf99f5ffd28102b585c841283eb1d"
 
       define_method(:install) do
         bin.install "dippin"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/2389-research/dippin-lang/releases/download/v0.4.1/dippin-lang_0.4.1_Darwin_arm64.tar.gz"
-      sha256 "e9c454a5c6e6cc9b1a302538dac65648ced241a76367b53932b9cca465ab7a8b"
+      url "https://github.com/2389-research/dippin-lang/releases/download/v0.4.2/dippin-lang_0.4.2_Darwin_arm64.tar.gz"
+      sha256 "ff520934457825246e8151e1a966e6b1208a131cb326c77011f4c14841fbd6b4"
 
       define_method(:install) do
         bin.install "dippin"
@@ -29,15 +29,15 @@ class DippinLang < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/2389-research/dippin-lang/releases/download/v0.4.1/dippin-lang_0.4.1_Linux_x86_64.tar.gz"
-      sha256 "4a63fb2a0ec79c0d77de1bdad041b9814e6d12bf5a1ee1fcc0f76919ee4125f3"
+      url "https://github.com/2389-research/dippin-lang/releases/download/v0.4.2/dippin-lang_0.4.2_Linux_x86_64.tar.gz"
+      sha256 "1b7aaeed87c05e81d79e5f6a2ed6a0c5b16d8b3bd4df800f9db254faf9373d4f"
       define_method(:install) do
         bin.install "dippin"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/2389-research/dippin-lang/releases/download/v0.4.1/dippin-lang_0.4.1_Linux_arm64.tar.gz"
-      sha256 "c61483930d70c9026ec53ad2f9362e2095a11e3ec90345a4cfb8db276b4ecdba"
+      url "https://github.com/2389-research/dippin-lang/releases/download/v0.4.2/dippin-lang_0.4.2_Linux_arm64.tar.gz"
+      sha256 "f3b4b12b8e36a1199b5187ee55202cddd82ac2307074a95ac99060759e46fc68"
       define_method(:install) do
         bin.install "dippin"
       end
