@@ -5,22 +5,22 @@
 class Ish < Formula
   desc "ISH - Intelligent Server Hub for digital twin APIs"
   homepage "https://github.com/2389-research/ish"
-  version "0.5.5"
+  version "0.6.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/2389-research/ish/releases/download/v0.5.5/ish_0.5.5_darwin_amd64.tar.gz"
-      sha256 "9eab93b409671497f0972710e9bff7aa2f73c64944b28970302f93310c00305c"
+      url "https://github.com/2389-research/ish/releases/download/v0.6.0/ish_0.6.0_darwin_amd64.tar.gz"
+      sha256 "cb23570439cd64b7f496d4668f51063f6fa4ebec47b6cf7f2989d4bc8415c50e"
 
-      def install
+      define_method(:install) do
         bin.install "ish"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/2389-research/ish/releases/download/v0.5.5/ish_0.5.5_darwin_arm64.tar.gz"
-      sha256 "5d3d719cb1a6dcbafb98b50a7bc8875d6be57830e82312aec0040d23e338c0c4"
+      url "https://github.com/2389-research/ish/releases/download/v0.6.0/ish_0.6.0_darwin_arm64.tar.gz"
+      sha256 "316354b307a6ddd215c6b01b578624a9981cb9d307f44cf5d9caa060bac42a5e"
 
-      def install
+      define_method(:install) do
         bin.install "ish"
       end
     end
@@ -28,16 +28,16 @@ class Ish < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/2389-research/ish/releases/download/v0.5.5/ish_0.5.5_linux_amd64.tar.gz"
-      sha256 "b53e419efd31b895a24aa9a4467229bc6924df3ed7db96a6ce70a22c020118cd"
-      def install
+      url "https://github.com/2389-research/ish/releases/download/v0.6.0/ish_0.6.0_linux_amd64.tar.gz"
+      sha256 "d10a026d572023965a09a53c6de45b849109ac2da873555416420287b4c7fd2f"
+      define_method(:install) do
         bin.install "ish"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/2389-research/ish/releases/download/v0.5.5/ish_0.5.5_linux_arm64.tar.gz"
-      sha256 "9c94c9fe02f86d77590478ca50272d2fcc6325e80c6a7a62b4db9540a3084ac9"
-      def install
+      url "https://github.com/2389-research/ish/releases/download/v0.6.0/ish_0.6.0_linux_arm64.tar.gz"
+      sha256 "c48d246c580ae411794fab20092935ec711cb5ab467576fd50f2c5ecda917a84"
+      define_method(:install) do
         bin.install "ish"
       end
     end
