@@ -4,19 +4,19 @@
 class Jeff < Formula
   desc "AI-powered personal assistant for email, calendar, and tasks"
   homepage "https://jeff.2389.ai"
-  version "0.5.0"
+  version "0.6.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://firebasestorage.googleapis.com/v0/b/jeff-pa-agent.firebasestorage.app/o/releases%2Fv0.5.0%2Fjeff_0.5.0_Darwin_x86_64.tar.gz?alt=media"
-      sha256 "d6f69988cb7ff646bb38bc1e5ecc519eb68ca26b3c7068782b03ee161bc8ff38"
+      url "https://firebasestorage.googleapis.com/v0/b/jeff-pa-agent.firebasestorage.app/o/releases%2Fv0.6.0%2Fjeff_0.6.0_Darwin_x86_64.tar.gz?alt=media"
+      sha256 "3f91be05a8801dcf5565a04894e5fa4224444c1539b7325b6d8eb2ed1b3ba307"
       def install
         bin.install "jeff"
       end
     end
     if Hardware::CPU.arm?
-      url "https://firebasestorage.googleapis.com/v0/b/jeff-pa-agent.firebasestorage.app/o/releases%2Fv0.5.0%2Fjeff_0.5.0_Darwin_arm64.tar.gz?alt=media"
-      sha256 "d389f7042470b485623b712e43f04ac6b663251188464cfa99b668517c48b2ca"
+      url "https://firebasestorage.googleapis.com/v0/b/jeff-pa-agent.firebasestorage.app/o/releases%2Fv0.6.0%2Fjeff_0.6.0_Darwin_arm64.tar.gz?alt=media"
+      sha256 "1e614ebf1b1767a028058367c56293edca0a1e8dad1e856d62d95e1ca5ea7f52"
       def install
         bin.install "jeff"
       end
@@ -25,15 +25,15 @@ class Jeff < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://firebasestorage.googleapis.com/v0/b/jeff-pa-agent.firebasestorage.app/o/releases%2Fv0.5.0%2Fjeff_0.5.0_Linux_x86_64.tar.gz?alt=media"
-      sha256 "921aa32620a506d7ef9ce19f3e8fb38fa378b92819b25018d126808d5e60e0ba"
+      url "https://firebasestorage.googleapis.com/v0/b/jeff-pa-agent.firebasestorage.app/o/releases%2Fv0.6.0%2Fjeff_0.6.0_Linux_x86_64.tar.gz?alt=media"
+      sha256 "7acc38151b5b60a7efb12b2f748c1aea0a92b3c753fcdd23bf876ee7aad9b707"
       def install
         bin.install "jeff"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://firebasestorage.googleapis.com/v0/b/jeff-pa-agent.firebasestorage.app/o/releases%2Fv0.5.0%2Fjeff_0.5.0_Linux_arm64.tar.gz?alt=media"
-      sha256 "13ee11330d4569102619373fc9c240cd2db2c8ece4250286be2e2cc69ae3914e"
+      url "https://firebasestorage.googleapis.com/v0/b/jeff-pa-agent.firebasestorage.app/o/releases%2Fv0.6.0%2Fjeff_0.6.0_Linux_arm64.tar.gz?alt=media"
+      sha256 "94cc204a7c46b30fc12f68bb577a7c52cb9b7d11b1ecf2dfc68b2dd8998b9136"
       def install
         bin.install "jeff"
       end
