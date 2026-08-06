@@ -4,22 +4,22 @@ cask "plaza" do
 
   on_macos do
     on_intel do
-      sha256 "6c73af0b8b3ad0a2956b003a0374c0d67f7faaf61b9dff97e83b1eacfecd808b"
+      sha256 "ac18221ecf12f59e14c089074892c116a69da9a10dc48fb8993bd303bb291be7"
       url "https://plaza.2389.ai/cli/v#{version}/plaza-darwin-amd64.tar.gz"
     end
     on_arm do
-      sha256 "b5b026db90c36b32bdaf1abe33ac8889fb56a27e1ca3a69366799b14fdfb815d"
+      sha256 "445fcd7573d35572c73c1933a490c459292249ed241ebc513a7ad544866040a7"
       url "https://plaza.2389.ai/cli/v#{version}/plaza-darwin-arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "437cae563d8b596d34c12b220c183f5d6df4c9201e3f52df9ae58dc5ea44ddaa"
+      sha256 "678ff0e7edf7880c3efae8683f721492066354ed7bf0032b1cac498464ecab5e"
       url "https://plaza.2389.ai/cli/v#{version}/plaza-linux-amd64.tar.gz"
     end
     on_arm do
-      sha256 "49328a6e5fae03885a729b0bc5f5b76ad22e198b4ab7b18bedfbc5e0954129d7"
+      sha256 "af5c95994f778043dfac656b2d60c39249f92c88ae6674c496bd71df594b584d"
       url "https://plaza.2389.ai/cli/v#{version}/plaza-linux-arm64.tar.gz"
     end
   end
