@@ -5,21 +5,21 @@
 class Tracker < Formula
   desc "Pipeline orchestration engine for multi-agent LLM workflows"
   homepage "https://github.com/2389-research/tracker"
-  version "0.60.1"
+  version "0.60.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/2389-research/tracker/releases/download/v0.60.1/tracker_tracker_0.60.1_darwin_amd64.tar.gz"
-      sha256 "e71dab3a4d25ad976f0b2a65ca31de66b04c93b85350618bb4f1677438849665"
+      url "https://github.com/2389-research/tracker/releases/download/v0.60.2/tracker_tracker_0.60.2_darwin_amd64.tar.gz"
+      sha256 "b3c9b56cadd9fbd0e113e80013efed0a0e5b25014fff7e88f48ce8b503d45827"
 
       define_method(:install) do
         bin.install "tracker"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/2389-research/tracker/releases/download/v0.60.1/tracker_tracker_0.60.1_darwin_arm64.tar.gz"
-      sha256 "435072ef8d69f72c6c66f18d38f435b98bc8ecbef34fc3e91f3dce2e75670327"
+      url "https://github.com/2389-research/tracker/releases/download/v0.60.2/tracker_tracker_0.60.2_darwin_arm64.tar.gz"
+      sha256 "56eb6ff40a5ed64809209550ed2d9842c3e4b0fcfc7b9eed231ef0622db975bc"
 
       define_method(:install) do
         bin.install "tracker"
@@ -29,15 +29,15 @@ class Tracker < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/2389-research/tracker/releases/download/v0.60.1/tracker_tracker_0.60.1_linux_amd64.tar.gz"
-      sha256 "ec6ec0f5fe4bdc5e9a760c06127456e1169672ec3d5d55cacf3cb482627559ff"
+      url "https://github.com/2389-research/tracker/releases/download/v0.60.2/tracker_tracker_0.60.2_linux_amd64.tar.gz"
+      sha256 "4715e5dc4a858d4f95694ec9c57d253ca9bfa09c77be25cfc52c6353a3f53931"
       define_method(:install) do
         bin.install "tracker"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/2389-research/tracker/releases/download/v0.60.1/tracker_tracker_0.60.1_linux_arm64.tar.gz"
-      sha256 "1cec18b85e086d656011c853c604dbc296d6b2283d41ae4b4c440cae727dfc31"
+      url "https://github.com/2389-research/tracker/releases/download/v0.60.2/tracker_tracker_0.60.2_linux_arm64.tar.gz"
+      sha256 "4d9b979817cfb2e2d370cff2b4787a24162e3a4ad84de7faf720faccbc9615a3"
       define_method(:install) do
         bin.install "tracker"
       end
