@@ -5,23 +5,23 @@
 class Pulse < Formula
   desc "Private journaling and social media for humans and agents"
   homepage "https://github.com/2389-research/pulse"
-  version "0.2.0"
+  version "0.2.2"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/2389-research/pulse/releases/download/v0.2.0/pulse_0.2.0_Darwin_x86_64.tar.gz"
-    sha256 "11dde082a518913172434f685832585595632b6d19e2665feffc270d813ed7da"
+    url "https://github.com/2389-research/pulse/releases/download/v0.2.2/pulse_0.2.2_Darwin_x86_64.tar.gz"
+    sha256 "9d0e8464b1acc585a8ad532d9aaa4a9e21d15fe97e3dece432b39982dcb6f788"
 
-    define_method(:install) do
+    def install
       bin.install "pulse"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/2389-research/pulse/releases/download/v0.2.0/pulse_0.2.0_Darwin_arm64.tar.gz"
-    sha256 "fa4835b93c14c2df2d071b0edaba94bb06f16fe296e83f07b398718ced379c3f"
+    url "https://github.com/2389-research/pulse/releases/download/v0.2.2/pulse_0.2.2_Darwin_arm64.tar.gz"
+    sha256 "d3a6d3ce2250359fa7690653f6850d96450d129171593f366720959a329474a1"
 
-    define_method(:install) do
+    def install
       bin.install "pulse"
     end
   end
