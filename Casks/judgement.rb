@@ -1,9 +1,9 @@
 cask "judgement" do
   arch arm: "arm64", intel: "amd64"
 
-  version "0.0.2"
-  sha256 arm:   "36e4424f4ed6b84ce4e96302f702bef788c8a7e65b60905c6de183cc5cf07728",
-         intel: "383a4574641661bd2b02715e17ea57034e5e58971c50f8466b6742daed958da2"
+  version "0.0.3"
+  sha256 arm:   "d52b20d2f6863be77e142f5e1fa3df7fa1dd03634e17be8ddf534bc495710d18",
+         intel: "f375fa320c8dcb4567031ab0a0d178929c215b050b8699977ea318a54c5e4d80"
 
   url "https://github.com/2389-research/judgement/releases/download/v#{version}/judgement_#{version}_darwin_#{arch}.tar.gz"
   name "Judgement"
