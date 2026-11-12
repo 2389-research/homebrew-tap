@@ -1,6 +1,6 @@
 # homebrew-tap
 
-Homebrew formulae and casks for 2389 Research tools. Formula definitions live in [Formula/](Formula/); desktop application casks live in [Casks/](Casks/).
+Homebrew formulae and casks for 2389 Research tools. Definitions live in [Formula/](Formula/) and [Casks/](Casks/).
 
 ## Use the tap
 
@@ -12,14 +12,14 @@ brew info 2389-research/tap/pulse
 brew install 2389-research/tap/pulse
 ```
 
-For a desktop application, use its cask name:
+Plaza is packaged as a cask:
 
 ```sh
 brew info --cask 2389-research/tap/plaza
 brew install --cask 2389-research/tap/plaza
 ```
 
-These are examples, not a requirement to install every tool. Check the selected formula or cask for its supported operating systems, architectures, dependencies, and upstream documentation. Availability depends on the referenced release assets.
+Check the selected formula or cask for its supported operating systems, architectures, dependencies, and upstream documentation. Availability depends on the referenced release assets.
 
 ## Maintaining definitions
 
